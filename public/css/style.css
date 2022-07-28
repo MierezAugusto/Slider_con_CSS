@@ -1,0 +1,70 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #222;
+}
+
+.slider-container{
+    width: 700px;
+    margin: 100px auto;
+}
+
+.slider-container .slider-viewport{
+    width: 700px;
+    border-radius: 10px;
+    display: flex;  
+    
+    overflow-x: auto; /* se puede poner hidden para que no se vea el scroll y solo queden los link*/
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+.slider-container .slider-viewport .slider{
+    min-width: 700px;
+    height: 400px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scroll-snap-align: start;
+}
+
+#slider1{
+    background-color: salmon;
+}
+#slider2{
+    background-color: steelblue;
+}
+#slider3{
+    background-color: yellowgreen;
+}
+#slider4{
+    background-color: palegoldenrod;
+}
+#slider5{
+    background-color: deeppink;
+}
+
+.slider-container .links{
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px
+}
+
+.slider-container .links a{
+    width: 40px;
+    height: 40px;
+    background-color: #2e2e2e;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+}
+
+.slider-container .links a:hover{
+    background-color: rgb(26, 26, 241);
+}
